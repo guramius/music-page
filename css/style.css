@@ -1,0 +1,498 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&family=Red+Hat+Mono:ital,wght@1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    background:rgba(161, 154, 154, 0.493);
+    padding: 15px 20px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+i{
+   font-size: 30px;
+   
+}
+.menu{
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+
+}
+.airpods{
+    display: flex;
+    justify-content: space-evenly;
+    background-image: url("../img/res.png") ;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    margin-top: 108px;
+
+}
+.airpods img{
+    width: 300px;
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.airpods p{
+    color: brown;
+    font-size: 40px;
+}
+.airpods button{
+    padding: 15px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    width: 200px;
+}
+.title{
+    text-align: center;
+    font-size: 35px;
+    padding: 20px;
+    margin: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+.musicSection{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 50px;
+    text-align: center;
+}
+.musicSection i {
+    cursor: pointer;
+    border-radius: 100%;
+    padding: 50px ;
+    font-size: 50px;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+    color: wheat;
+}
+.stop{
+    display: flex;
+    justify-content: space-around;
+    /* gap: 50px; */
+}
+.next{
+    display: flex;
+    justify-content: space-around;
+    /* gap: 50px; */
+}
+.section{
+    padding: 100px;
+    padding-top: 0;
+}
+.dropDown {
+    position: relative;
+    /* border-bottom: 2px solid black; */
+    box-shadow: 0 4px 2px -2px gray;
+    padding: 20px;
+    padding-left: 0;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content p,ul,li {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content li:hover{
+      color: white;
+      background-color: gray;
+  }
+  .dropdown-content p:hover{
+    color: white;
+    background-color: gray;
+}
+.dropDown:hover .dropdown-content {
+    display: block;
+    width: 100%;
+}
+.links{
+    font-size: 25px;
+    color: black;
+    
+}
+.links:hover{
+    text-decoration: underline;
+}
+.color{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    padding:  100px 0;
+}
+.imgs img{
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes example {
+    0%   {background-color:rgb(211, 47, 47); }
+    25%  {background-color:rgb(197, 197, 50);}
+    50%  {background-color:blue;}
+    75%  {background-color:green;}
+    100% {background-color:rgb(124, 33, 33);}
+  }
+.footerTitle:hover{
+    color: darkgreen;
+    cursor: pointer;
+}
+.gift{
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    background-color: rgba(179, 169, 169, 0.719);
+}
+.gift img{
+    width: 400px;
+    
+}
+.gift details summary {
+    text-decoration: underline;
+    font-size: 20px;
+    color: rgb(255, 123, 0);
+    cursor: pointer;
+}
+
+/* input page css */
+
+.box{
+    width: 300px;
+    padding: 20px;
+    padding-bottom:40px ;
+    border-radius: 3%;
+    margin:auto;
+    background: rgba(211, 211, 211, 0.925);
+    
+    
+}
+.title{
+    margin-bottom: 25px;
+    display: flex;
+    color: tomato;
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.box-form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    
+}
+.mama{
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    padding: 8px;
+    margin-top: 10px ;
+    text-transform: capitalize;
+}
+.mama:hover{
+    background: rgba(128, 128, 128, 0.432);
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+.gender label{
+    
+    margin-right: 70px;
+
+}
+.gender label:last-child{
+    margin-right: 0px;
+}
+.check input{
+    margin-right: 95px;
+}
+.check input:last-child{
+    margin-right: 0px;
+}
+
+.gender-2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    
+}
+.file input{
+    display: none;
+    /* margin: 20px 0 40px 0; */
+}
+
+span{
+    color:red;
+}
+
+.file label:hover{
+    color: tomato;
+    text-transform: capitalize;
+    
+}
+
+.flex-but{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.flex-but button{
+    background: none;
+    border: none;
+    width: 90px;
+    height: 30px;
+    /* padding: 8px 20px; */
+    background: tomato;
+    border: 1px solid tomato;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+
+}
+.flex-but button:hover{
+    color:rgb(255, 255, 0);
+    text-transform: capitalize;
+    font-size: 15px;
+
+}
+
+.flex-but button:active{
+    border: 1px solid rgba(46, 45, 45, 0.685);
+    background: grey;
+    color: white;
+    text-transform: none;
+
+}
+
+.choos{
+    margin-top: 20PX;
+}
+.footerDisplay{
+    display: none;
+}
+/* response */
+@media only screen and (min-width: 801px) and (max-width: 1024px){
+    .nav i,ul,li{
+        font-size: 17px;
+        
+    }
+    .airpods img{
+        width: 200px;
+    }
+    .airpods p{
+        color: black;
+        font-size: 18px;
+    }
+    .desc button{
+        padding: 10px;
+        width: 100px;
+        font-size: 15px;
+    }
+    .musicSection i {
+        width: 110px;
+        padding: 30px;
+    }
+    .musicSection p,h3{
+        font-size: 14px;
+    }
+    .dropDown a{
+        font-size: 16px;
+    }
+    .dropdown-content p,ul,li{
+        font-size: 14px;
+    }
+
+}
+@media only screen and (min-width:475px) and (max-width:800px){
+    .nav li{
+        font-size: 12px;        
+    }
+    .nav i{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        padding: 5px;
+        gap: 0;
+    }
+    .airpods img{
+        width: 100px;
+    }
+    .airpods p{
+        color: black;
+        font-size: 12px;
+    }
+    .desc button{
+        padding: 10px;
+        width: 70px;
+        font-size: 10px;
+    }
+    .musicSection i {
+        width: 60px;
+        padding: 10px;
+        font-size: 40px;
+    }
+    .musicSection p,h3{
+        font-size: 10px;
+    }
+    .dropDown a{
+        font-size: 10px;
+    }
+    .dropdown-content p,ul,li{
+        font-size: 10px;
+    }
+    .gift{
+        display: none;
+    }
+    .color :nth-child(2n){
+        display: none;
+    }
+
+}
+@media only screen and (min-width:375px) and (max-width:474px){
+    .nav li{
+        font-size: 12px;        
+    }
+    .nav i{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        padding: 5px;
+        gap: 0;
+    }
+    .airpods img{
+        width: 100px;
+    }
+    .airpods p{
+        color: black;
+        font-size: 12px;
+    }
+    .desc button{
+        padding: 10px;
+        width: 70px;
+        font-size: 10px;
+    }
+    .musicSection i {
+        width: 60px;
+        padding: 10px;
+        font-size: 40px;
+    }
+    .musicSection p,h3{
+        font-size: 10px;
+    }
+    .dropDown a{
+        font-size: 10px;
+    }
+    .dropdown-content p,ul,li{
+        font-size: 10px;
+    }
+    .gift{
+        display: none;
+    }
+    .color :nth-child(2n){
+        display: none;
+    }
+
+}
+@media only screen and (min-width:275px) and (max-width:374px){
+    .nav{
+        height: 20px;
+    
+    }
+    .nav li{
+        font-size: 6px;        
+    }
+    .nav i{
+        display: none;
+    }
+    .airpods{
+        padding: 30px;
+        margin-top: 30px;
+    }
+
+    .airpods img{
+        width: 50px;
+    }
+    .airpods p{
+        color: black;
+        font-size: 6px;
+     }
+    .desc button{
+        padding: 5px 10px;
+        width: 30px;
+        font-size: 4px;
+    }
+    .title{
+        font-size: 10px;
+        text-align: center;
+        /* padding: 10px; */
+        margin: auto;
+    }
+    .musicSection i {
+        width: 40px;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .musicSection p,h3{
+        font-size: 5px;
+    }
+    .dropDown{
+        padding: 0;
+        margin: 0;
+    }
+    .dropDown a{
+        font-size: 5px;
+    }
+    .dropdown-content p,ul,li{
+        font-size: 5px;
+        
+    }
+    .gift{
+        display: none;
+    }
+    .color{
+        padding: 20px;
+    }
+
+    .color h4{
+        font-size: 8px
+    }
+    .color p {
+        font-size: 8px;
+    }
+    .color img {
+        width: 35px;
+    }
+    .display{
+        display: none;
+    }
+
+}
